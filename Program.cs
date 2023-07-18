@@ -1,8 +1,19 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using ThucTapMVC.Data;
+using ThucTapMVC.Models;
 
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<ApplicationDbContext>(options => 
+{
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+});
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+//DI
+builder.Services.AddSingleton<Contacts>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
