@@ -5,12 +5,88 @@
       "PackagePath": "staticwebassets\\ThucTapMVC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\css\\.DS_Store",
+      "PackagePath": "staticwebassets\\css\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\css\\bootstrap\\_media.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\_media.css"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\css\\bootstrap\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\css\\bootstrap\\mixins\\_badge.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\mixins\\_badge.css"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\css\\bootstrap\\mixins\\_box-shadow.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\mixins\\_box-shadow.css"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\css\\bootstrap\\mixins\\_reset-text.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\mixins\\_reset-text.css"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\css\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\css\\ionicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
       "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\css\\styleFooter.css",
+      "PackagePath": "staticwebassets\\css\\styleFooter.css"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\css\\style\\style-contact.css",
+      "PackagePath": "staticwebassets\\css\\style\\style-contact.css"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\css\\style\\style.css",
+      "PackagePath": "staticwebassets\\css\\style\\style.css"
+    },
+    {
       "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\images\\company.png",
+      "PackagePath": "staticwebassets\\images\\company.png"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\images\\hero_1.jpg",
+      "PackagePath": "staticwebassets\\images\\hero_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\images\\hero_3.jpg",
+      "PackagePath": "staticwebassets\\images\\hero_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\images\\logoaegona.png",
+      "PackagePath": "staticwebassets\\images\\logoaegona.png"
+    },
+    {
+      "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\images\\member.png",
+      "PackagePath": "staticwebassets\\images\\member.png"
     },
     {
       "Id": "C:\\Users\\gomes\\OneDrive\\Máy tính\\ThucTapAEGONA-MVC\\wwwroot\\js\\site.js",

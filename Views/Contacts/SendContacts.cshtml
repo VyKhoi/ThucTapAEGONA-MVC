@@ -1,0 +1,109 @@
+﻿@model Contacts
+@{
+    ViewData["Title"] = "Contact us";
+
+}
+<div class="container">
+    <div style="text-align: left">
+        <div class="icon-btn">
+            <a style="background-color: red; padding: 10px; color: white; margin-top: 10px;" href="#">
+                <img src="https://www.aegona.com/themes/gavias_comely/assets/icon/logo-small.png" alt="aegona" />
+                <span>Contact Us</span>
+            </a>
+        </div>
+        <h2 style="color: #003363; font-weight: bold;">SEND US A MESSAGE</h2>
+    </div>
+    <div class="rows ">
+        <div class="columns image-Contact">
+            <div class="logo-Ae">
+                <img src=https://www.aegona.com/themes/gavias_comely/assets/image/contact-us-page/logo.png alt="alt" />
+            </div>
+            <div class="group-Content">
+                <div class="box-Content">
+                    <div class="title-Content">
+                        <h4>
+                            Aegona is an IT service company based in Ho Chi Minh city,
+                            VietNam. At Aegona we provide.
+                        </h4>
+                        <ul class="description-Content">
+                            <li>Software Development</li>
+                            <li>Software Testing</li>
+                            <li>
+                                Automation Testing and Software Maintenance services for
+                                North America, Japan, Singapore and VietNam.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-Content">
+                        <div class="title-Content">
+                            <h2>Information</h2>
+                        </div>
+                        <ul class="description-Content">
+                            <li>
+                                <span>Address :</span>
+
+                                QTSC Building 9 Quang Trung Software City Tan Chanh Hiep
+                                Ward, District 12, Ho Chi Minh City, Viet Nam
+                            </li>
+                            <li>
+                                <span>Email :</span>
+                                <a href="mailto : contact@aegona.com">contact@aegona.com</a>
+                            </li>
+                            <li>
+                                <span>Phone :</span>
+                                <a href="tel : +84 28 7109 2939">+84 28 7109 2939</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <form asp-action="SendContacts">
+               
+
+                <label asp-for="FullName" ></label>
+                <input asp-for="FullName" placeholder="FullName">
+                <span asp-validation-for="FullName" class="text-danger"></span>
+
+              
+
+                <label asp-for="CompanyName">Company Name</label>
+                <input asp-for="CompanyName" placeholder="CompanyName">
+                <span asp-validation-for="CompanyName" class="text-danger"></span>
+
+            
+                <label asp-for="BusinessPhone">Business Phone</label>
+                <input asp-for="BusinessPhone" placeholder="BusinessPhone">
+                <span asp-validation-for="BusinessPhone" class="text-danger"></span>
+
+            
+                <label asp-for="Email">Email</label>
+                <input asp-for="Email" placeholder="Email">
+                <span asp-validation-for="Email" class="text-danger"></span>
+
+                <label asp-for="Message">Message</label>
+                <textarea rows="4" asp-for="Message" placeholder="Message"></textarea>
+                <span asp-validation-for="Message" class="text-danger"></span>
+                
+
+                <!-- Capchar -->
+
+
+                <h1>CAPTCHA DEMO</h1>
+
+                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                <input type="submit" value="Gửi" class="btn btn-primary " />
+
+            </form>
+        </div>
+    </div>
+    
+
+</div>
+    </div>
+  </div>
+  @section Scripts
+  {
+    <partial name="_ValidationScriptsPartial" />
+  }

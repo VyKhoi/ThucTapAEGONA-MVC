@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Diagnostics.Contracts;
 using ThucTapMVC.Data;
 using ThucTapMVC.Models;
-using ThucTapMVC.Models.Dto;
+
 
 namespace ThucTapMVC.Controllers
 {
@@ -18,37 +18,38 @@ namespace ThucTapMVC.Controllers
             _db = db;
             _contacts = contacts;
         }
-        public IActionResult Index()
+        public async Task <IActionResult> Index()
         {
-            return View();
+            return _db.Contacts != null ?
+                         View(await _db.Contacts.ToListAsync()) :
+                         Problem("Entity set 'MyDbContext.contactModel'  is null.");
         }
 
-        [HttpGet("/contact/")]
+        [HttpGet]
         [AllowAnonymous]
-        public IActionResult SendContact()
+        public IActionResult SendContacts()
         {
             return View();
         }
 
-        [HttpPost("/contact/")]
+        [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> SendContact([Bind("FullName,Email,PhoneNumber,Message")] Contacts contactModel)
+        public async Task<IActionResult> SendContacts([Bind("FullName,Email,CompanyPhone,BusinessPhone,Message")] Contacts model)
         {
-            if (ModelState.IsValid) 
-            { 
-            //{
-            //    _contacts.SendDate = DateTime.Now;
-                _db.Add(contactModel);
+
+            if (ModelState.IsValid)
+            {
+                
+                _db.Add(model);
                 await _db.SaveChangesAsync();
 
-                //AlertStatusMessage = "Cảm ơn bạn đã góp ý !";
 
-                return RedirectToAction("Index", "Home");
+
+                return RedirectToAction(nameof(Index));
             }
-            return View(contactModel);
+            return View(model);
         }
-
 
 
     }
