@@ -7,43 +7,288 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ThucTapMVC.styles.css" asp-append-version="true" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,500' rel='stylesheet' type='text/css'>
+    <!-- Style -->
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/style/style.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/style/style-contact.css" asp-append-version="true">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- cdn ui lib -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+          integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+            integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI=" crossorigin="anonymous"></script>
+    <!-- css footer -->
+    <link rel="stylesheet" href="~/css/ionicons.min.css">
+    <link rel="stylesheet" href="~/css/styleFooter.css">
+    <!-- Bostrap -->
+    @{
+        string popperJsSrc = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js";
+    }
+    <script src="@popperJsSrc"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ThucTapMVC</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Contacts" asp-action="Index">Contact</a>
-                        </li>
+   @*<-- header --></>*@
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <div class="top-bar">
+    <div class="container">
+
+      <div class="row">
+        <div class=" nav-header-contact">
+
+          <a href="#" class><span class="mr-2  icon-phone nav-icon"></span>
+            <span class="d-none d-md-inline-block">1+ (234)
+              5678 9101</span></a>
+          <span class="mx-md-2 d-inline-block"></span>
+
+          <a href="#" class><span class="mr-2  icon-envelope-open-o nav-icon"></span>
+            <span class="d-none d-md-inline-block">contact@aegona.com</span></a>
+          <span class="mx-md-2 d-inline-block"></span>
+
+          <a href="#" class> <i class="fa-solid fa-location-dot nav-icon"></i>
+            <span class="d-none d-md-inline-block"> QTSC9, Quang Trung Software
+              City, District 12, Ho Chi Minh City, Viet Nam</span></a>
+
+          <div class="float-right">
+
+            <a href="#" class><span class="mr-2  icon-twitter"></span></a>
+            <a href="#" class><span class="mr-2  icon-facebook"></span> </a>
+            <i class="fa-brands fa-instagram"></i>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+    <div class="container">
+      <div class="row align-items-center position-relative">
+
+        <div class="site-logo">
+          <a href="index.html" class="text-black"><span class="text-primary">
+                            <img class="img-logo" src="~/images/logoaegona.png">
+                    </a>
+        </div>
+
+        <div class="col-12">
+          <nav class="site-navigation text-right ml-auto " role="navigation">
+
+            <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+              <li><a href="#home-section" class="nav-link">Home</a></li>
+              <li><a href="#services-section" class="nav-link">Services</a></li>
+
+              <li class="has-children">
+                <a href="#about-section" class="nav-link">About Us</a>
+                <ul class="dropdown arrow-top">
+                  <li><a href="#team-section" class="nav-link">Team</a></li>
+                  <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
+                  <li><a href="#faq-section" class="nav-link">FAQ</a></li>
+                  <li class="has-children">
+                    <a href="#">More Links</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Menu One</a></li>
+                      <li><a href="#">Menu Two</a></li>
+                      <li><a href="#">Menu Three</a></li>
                     </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="#why-us-section" class="nav-link">Why Us</a></li>
+
+              <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
+              <li><a href="#blog-section" class="nav-link">Blog</a></li>
+              <li><a href="#contact-section" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+
+        </div>
+
+        <div class="toggle-button d-inline-block d-lg-none"><a href="#"
+            class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+      </div>
+    </div>
+
+  </header>
+
+  <div class="hero image-header" style="background-image: url('images/member.png');">
+    <p  class="contact-item">CONTACT US</p>
+    <div class="line-header"></div>
+  </div>
+
+  @*header*@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <!-- footer -->
+    <footer class="footer-02">
         <div class="container">
-            &copy; 2023 - ThucTapMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-6">
+                    <div class="subscribe mb-5">
+                        <form action="#" class="subscribe-form">
+                            <div class="form-group d-flex">
+                                <input type="text" class="form-control rounded-left" placeholder="Enter email address">
+                                <input type="submit" value="Subscribe" class="form-control submit px-3">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row content-footer">
+                <div class="col-md-4 col-lg-5">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-8 mb-md-0 mb-4 ">
+                            <h2 class="footer-heading"><a href="#" class="logo">Colorlib.com</a></h2>
+                            <p>
+                                A small river named Duden flows by their place and supplies
+                                it with the necessary regelialia.
+                            </p>
+                            <a href="#">read more <span class="ion-ios-arrow-round-forward"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-7">
+                    <div class="row">
+                        <div class="col-md-3 mb-md-0 mb-4 border-left">
+                            <h2 class="footer-heading">Discover</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="py-1 d-block">Buy &amp; Sell</a></li>
+                                <li><a href="#" class="py-1 d-block">Merchant</a></li>
+                                <li><a href="#" class="py-1 d-block">Giving back</a></li>
+                                <li><a href="#" class="py-1 d-block">Help &amp; Support</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 mb-md-0 mb-4 border-left">
+                            <h2 class="footer-heading">About</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="py-1 d-block">Staff</a></li>
+                                <li><a href="#" class="py-1 d-block">Team</a></li>
+                                <li><a href="#" class="py-1 d-block">Careers</a></li>
+                                <li><a href="#" class="py-1 d-block">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 mb-md-0 mb-4 border-left">
+                            <h2 class="footer-heading">Resources</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="py-1 d-block">Security</a></li>
+                                <li><a href="#" class="py-1 d-block">Global</a></li>
+                                <li><a href="#" class="py-1 d-block">Charts</a></li>
+                                <li><a href="#" class="py-1 d-block">Privacy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 mb-md-0 mb-4 border-left">
+                            <h2 class="footer-heading">Social</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="py-1 d-block">Facebook</a></li>
+                                <li><a href="#" class="py-1 d-block">Twitter</a></li>
+                                <li><a href="#" class="py-1 d-block">Instagram</a></li>
+                                <li><a href="#" class="py-1 d-block">Googleplus</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row partner-wrap mt-5 content-footer">
+                <div class="col-md-12">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h3 class="mb-0">Our Partner:</h3>
+                        </div>
+                        <div class="col-md-9">
+                            <p class="partner-name mb-0">
+                                <a href="#">
+                                    <span class="ion-logo-ionic mr-2"></span>Company
+                                    01
+                                </a>
+                                <a href="#">
+                                    <span class="ion-logo-ionic mr-2"></span>Company
+                                    02
+                                </a>
+                                <a href="#">
+                                    <span class="ion-logo-ionic mr-2"></span>Company
+                                    03
+                                </a>
+                                <a href="#">
+                                    <span class="ion-logo-ionic mr-2"></span>Company
+                                    04
+                                </a>
+                                <a href="#">
+                                    <span class="ion-logo-ionic mr-2"></span>Company
+                                    05
+                                </a>
+                                <a href="#">
+                                    <span class="ion-logo-ionic mr-2"></span>Company
+                                    06
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col text-md-right">
+                            <p class="mb-0">
+                                <a href="#" class="btn-custom">
+                                    See All <span class="ion-ios-arrow-round-forward"></span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-8">
+
+                    <p class="copyright">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4 text-md-right">
+                    <p class="mb-0 list-unstyled">
+                        <a class="mr-md-3" href="#">Terms</a>
+                        <a class="mr-md-3" href="#">Privacy</a>
+                        <a class="mr-md-3" href="#">Compliances</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+  @*  <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>*@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
